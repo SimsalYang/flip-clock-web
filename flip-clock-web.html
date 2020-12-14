@@ -1,0 +1,26 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./flipclock.css">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<script src="./jquery.js"></script>
+	<script src="./flipclock.js"></script>
+</head>
+<body>
+	<div id="box">
+		<div id="content">
+			<div class="clock" id=flipclock></div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		let clock;
+		$(document).ready(function() {
+			clock = $('.clock').FlipClock({
+				clockFace: 'TwentyFourHourClock',
+				showSeconds: false
+			});
+		});
+	</script>
+</body>
+</html>
